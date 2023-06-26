@@ -1,4 +1,4 @@
 FROM openjdk
-WORKDIR usr/lib
-ADD ./target/testrepo.jar /usr/lib/testrepo.jar
+EXPOSE 8081
+ADD target/testrepo.jar testrepo.jar
 ENTRYPOINT ["java","-jar","testrepo.jar"]
